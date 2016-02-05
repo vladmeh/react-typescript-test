@@ -1,5 +1,5 @@
-/// <reference path="./typings/react/react.d.ts" />
-/// <reference path="./typings/react/react-dom.d.ts" />
+/// <reference path="typings/react/react.d.ts" />
+/// <reference path="typings/react/react-dom.d.ts" />
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
@@ -15,7 +15,5 @@ var HelloMessage = React.createClass<HelloWorldProps, any>({
         return <div>Hello {this.props.name}</div>;
     }
 });
-
-mountNode = document.getElementById('example');
 
 ReactDOM.render(<HelloMessage name="John" />, document.getElementById('example'));
